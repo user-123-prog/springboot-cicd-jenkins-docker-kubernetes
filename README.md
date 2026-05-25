@@ -1,11 +1,41 @@
-├── k8s/                        # Kubernetes manifests
-├── src/main/java/com/example/  # Spring Boot source code
-├── target/                     # Maven build output
-├── Dockerfile                  # Docker image definition
-├── Jenkinsfile                 # CI/CD pipeline stages
-└── pom.xml                     # Maven dependencies
+#  Spring Boot CI/CD with Jenkins, Docker & Kubernetes
+
+A production-style CI/CD pipeline for a Spring Boot application using Jenkins, Docker, and Kubernetes.
+
+##  Project Overview
+This project demonstrates end-to-end DevOps automation — from code commit to deployment — using industry-standard tools.
+
+##  Tech Stack
+| Layer | Tool |
+|---|---|
+| Application | Spring Boot (Java) |
+| Build | Maven |
+| CI/CD | Jenkins |
+| Containerization | Docker |
+| Orchestration | Kubernetes (k8s) |
+| Version Control | GitHub |
+
+##  Project Structure
+- k8s/ — Kubernetes manifests
+- src/main/java/com/example/ — Spring Boot source code
+- Dockerfile — Docker image definition
+- Jenkinsfile — CI/CD pipeline stages
+- pom.xml — Maven dependencies
+
+##  Pipeline Stages
+1. Clone code from GitHub
+2. Build with Maven
+3. Docker Build & Push
+4. Deploy to Kubernetes
+
+##  Run with Docker
 docker build -t springboot-app .
 docker run -p 8080:8080 springboot-app
+
+##  Deploy to Kubernetes
 kubectl apply -f k8s/
 kubectl get pods
 kubectl get svc
+
+##  Author
+Sushmitha P N — DevOps Engineer
