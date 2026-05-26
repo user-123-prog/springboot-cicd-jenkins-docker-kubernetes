@@ -28,6 +28,20 @@ This project demonstrates end-to-end DevOps automation — from code commit to d
 3. Docker Build & Push
 4. Deploy to Kubernetes
 
+   ## 📸 Screenshots
+
+### Jenkins Pipeline - Stage View
+
+
+![Jenkins Pipeline](jenkins%20pipeline.jpeg)
+
+
+
+### Deployed Application
+
+
+![Deployed App](deployed%20application.jpeg)
+
 ##  Run with Docker
 docker build -t springboot-app .
 docker run -p 8080:8080 springboot-app
