@@ -12,6 +12,19 @@ A production-style CI/CD pipeline for a Spring Boot application using Jenkins, D
 
 ##  Project Overview
 This project demonstrates end-to-end DevOps automation — from code commit to deployment — using industry-standard tools.
+## ✅ Prerequisites
+
+| Tool | Version | Purpose |
+|------|---------|---------|
+| Java (JDK) | 17 | Run Spring Boot app (openjdk:17) |
+| Maven | 3.8+ | Build & package (mvn clean package) |
+| Spring Boot | 3.2.5 | Application framework |
+| Docker | Latest | Build & push container image |
+| Jenkins | LTS | CI/CD pipeline automation |
+| kubectl | Latest | Deploy to Kubernetes |
+| AWS EC2 | - | Host Jenkins & Kubernetes |
+| DockerHub Account | - | Store springboot-app:latest image |
+| GitHub Account | - | Source code repository |
 
 ##  Tech Stack
 | Layer | Tool |
