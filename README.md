@@ -8,7 +8,7 @@
 
 
 
-A production-style CI/CD pipeline for a Spring Boot application using Jenkins, Docker, and Kubernetes.
+A production-style CI/CD pipeline for a Spring Boot application using Jenkins, Docker, Kubernetes, Maven, AWS and Spring boot
 
 ##  Project Overview
 This project demonstrates end-to-end DevOps automation — from code commit to deployment — using industry-standard tools.
