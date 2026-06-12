@@ -49,7 +49,20 @@ This project demonstrates end-to-end DevOps automation — from code commit to d
 3. Docker Build & Push
 4. Deploy to Kubernetes
 
-   ## 📸 Screenshots
+## 🚧 Challenges Faced
+
+| Challenge | How I Solved It |
+|-----------|----------------|
+| Jenkins couldn't find Maven | Configured Maven3 manually under Manage Jenkins → Tools → Maven installations |
+| Docker build failing | Changed base image from OpenJDK 21 to 17 to match project compatibility |
+| Kubernetes pod not starting | Fixed imagePullPolicy: Never to use local Docker image |
+| Jenkins pipeline Git checkout failing | Corrected GitHub repo URL and branch name to 'main' in Jenkinsfile |
+| JAR file not found during Docker build | Fixed COPY path to target/demo-1.0.jar app.jar in Dockerfile |
+| DockerHub credentials in Jenkins | Used Jenkins Credentials Manager to securely store DockerHub username & password |
+| Kubernetes pod CrashLoopBackOff | Debugged using kubectl logs and kubectl describe pod to find root cause |
+| AWS EC2 app not accessible | Configured inbound security group rules to allow port 8080 traffic |
+
+## 📸 Screenshots
 
 ### Jenkins Pipeline - Stage View
 
