@@ -43,11 +43,12 @@ This project demonstrates end-to-end DevOps automation — from code commit to d
 - Jenkinsfile — CI/CD pipeline stages
 - pom.xml — Maven dependencies
 
-##  Pipeline Stages
-1. Clone code from GitHub
-2. Build with Maven
-3. Docker Build & Push
-4. Deploy to Kubernetes
+## Pipeline Stages
+
+1. **Clone code from GitHub** → Jenkins pulls code from `main` branch
+2. **Build with Maven** → `mvn clean package -DskipTests` creates JAR file
+3. **Docker Build & Push** → Builds `springboot-app:latest` image, pushes to DockerHub
+4. **Deploy to Kubernetes** → `kubectl apply -f k8s/` deploys to AWS EC2 cluster
 
 ## 🚧 Challenges Faced
 
