@@ -5,6 +5,9 @@
 ![AWS](https://img.shields.io/badge/AWS-EC2-orange)
 ![Maven](https://img.shields.io/badge/Maven-Build-green)
 ![Spring Boot](https://img.shields.io/badge/SpringBoot-Java-brightgreen)
+
+
+
 A production-style CI/CD pipeline for a Spring Boot application using Jenkins, Docker, and Kubernetes.
 
 ##  Project Overview
